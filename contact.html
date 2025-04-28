@@ -64,21 +64,22 @@
 			</div>
 		<section>
 			<div id="contact_form">
-				<form action="https://formspree.io/yourformid" method="POST"> 
-										<label for="name">Your Name: </label><br>
-										<input type="text" id="name" name="name" required style="width: 300px;"><br><br>
-								
-										<label for="email">Your Email: </label><br>
-										<input type="email" id="email" name="email" required><br><br>
-								
-										<label for="message">Your Message: </label><br>
-										<textarea ide="message" name="message" rows="4" required>
-
-										</textarea><br><br>
-								
-										<input type="submit" value="Send Message" style="background-color: #b1c68a;"><br>
+				<form name="contact" method="POST" data-netlify="true"> 
+				  <input type="hidden" name="form-name" value="contact">
+				  
+				  <label for="name">Your Name: </label><br>
+				  <input type="text" id="name" name="name" required style="width: 300px;"><br><br>
+			  
+				  <label for="email">Your Email: </label><br>
+				  <input type="email" id="email" name="email" required><br><br>
+			  
+				  <label for="message">Your Message: </label><br>
+				  <textarea id="message" name="message" rows="4" required></textarea><br><br>
+			  
+				  <input type="submit" value="Send Message" style="background-color: #b1c68a;"><br>
 				</form>
-			</div>
+			  </div>
+			  
 		</section>
 	</section>
 
