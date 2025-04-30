@@ -4127,9 +4127,10 @@
 	padding: 2rem 3rem;
 	gap: 2rem;
 	flex-wrap: nowrap; /* Stay in one row */
+	position: relative; /* Position footer relative to itself */
+	height: 200px; /* Give the footer some height */
   }
   
-  /* === Footer sections === */
   .footer-left,
   .footer-center,
   .footer-right {
@@ -4137,48 +4138,39 @@
 	align-items: center;
   }
   
-  /* Left: logo */
   .footer-left img {
 	max-height: 110px;
   }
-  
-  /* Center: vertical stack */
-  .footer-center {
+  .footer-left {
 	display: flex;
-	flex-direction: column;
 	align-items: center;
-	justify-content: flex-end; /* This will push the content to the bottom */
-	height: 100%; /* Ensures the container takes up full height */
-	gap: 1rem;
+	margin-top: 0.5rem; /* Add this to push the left logo down */
   }
-  
-  .copyright p {
-	color: #b1c68a;
-	margin: 0; /* Remove any default margins */
-  }
-  
-  .copyright {
-	margin-top: auto; /* Pushes the <p> element to the bottom */
-  }
-  .copyright p {
-	color: #b1c68a;
-  }
-  
-  /* Copyright */
-  .copyright p {
-	margin: 0;
-	font-size: 0.9rem;
-	color: #bbb;
-  }
-  
-  /* Right: partner logos */
   .footer-right {
 	gap: 1.5rem;
   }
   
   .footer-right img {
-	display:flex;
+	display: flex;
   }
+  
+  .footer-center {
+	display: flex;
+	flex-direction: column; /* Ensures items are stacked vertically */
+	align-items: center;
+	justify-content: flex-end; /* Ensures copyright is pushed to the bottom */
+	gap: 1rem;
+	height: 100%; /* Ensures it takes up full height */
+  }
+  
+  .copyright p {
+	color: #b1c68a;
+	margin: 0; /* Remove any default margins */
+	font-size: 0.9rem;
+	color: #bbb;
+  }
+  
+  /* Mobile Layout */
   @media (max-width: 768px) {
 	#footer {
 	  flex-direction: column;
@@ -4186,6 +4178,7 @@
 	  text-align: center;
 	  flex-wrap: wrap; /* Allow wrapping */
 	  padding: 2rem 1rem;
+	  height: auto; /* Allow footer height to adjust dynamically on mobile */
 	}
   
 	.footer-left,
@@ -4194,22 +4187,17 @@
 	  align-items: center;
 	  gap: 1rem;
 	}
+  
 	.footer-center {
 		display: flex;
 		flex-direction: column;
 		align-items: center;
+		justify-content: flex-end;
 		gap: 1rem;
-		height: 100%; /* Ensures the container takes full height */
+		height: 100%;
+		margin-top: 0.5rem; /* Adjust this to fine-tune the vertical position */
 	  }
-	  
-	  .copyright {
-		margin-top: auto; /* Pushes the <p> element to the bottom */
-	  }
-	  
-	  .copyright p {
-		color: #b1c68a;
-	  }
-	  
+  
 	.footer-left img,
 	.footer-right img {
 	  max-width: 100px;
@@ -4221,6 +4209,8 @@
 	  justify-content: center;
 	}
   }
+  
+  
 
   .contact_info {
 	display: flex;
