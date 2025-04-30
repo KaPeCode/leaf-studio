@@ -1938,23 +1938,6 @@
 		text-transform: uppercase;
 		white-space: nowrap;
 	}
-
-		input[type="submit"].icon,
-		input[type="reset"].icon,
-		input[type="button"].icon,
-		button.icon,
-		.button.icon {
-			padding-left: 1.35rem;
-		}
-
-			input[type="submit"].icon:before,
-			input[type="reset"].icon:before,
-			input[type="button"].icon:before,
-			button.icon:before,
-			.button.icon:before {
-				margin-right: 0.5rem;
-			}
-
 		input[type="submit"].fit,
 		input[type="reset"].fit,
 		input[type="button"].fit,
@@ -2059,14 +2042,6 @@
 			button.alt:active,
 			.button.alt:active {
 				background-color: rgba(144, 144, 144, 0.2);
-			}
-
-			input[type="submit"].alt.icon:before,
-			input[type="reset"].alt.icon:before,
-			input[type="button"].alt.icon:before,
-			button.alt.icon:before,
-			.button.alt.icon:before {
-				color: #bbb;
 			}
 
 		input[type="submit"].special,
@@ -2332,27 +2307,6 @@
 		color: #bbb !important;
 	}
 
-/* Icon */
-
-	.icon {
-		text-decoration: none;
-		border-bottom: none;
-		position: relative;
-	}
-
-		.icon:before {
-			-moz-osx-font-smoothing: grayscale;
-			-webkit-font-smoothing: antialiased;
-			font-family: FontAwesome;
-			font-style: normal;
-			font-weight: normal;
-			text-transform: none !important;
-		}
-
-		.icon > .label {
-			display: none;
-		}
-
 /* Image */
 
 	.image {
@@ -2444,25 +2398,6 @@
 					padding-top: 0;
 				}
 
-		ul.icons {
-			cursor: default;
-			list-style: none;
-			padding-left: 0;
-		}
-
-			ul.icons li {
-				display: inline-block;
-				padding: 0 1rem 0 0;
-			}
-
-				ul.icons li:last-child {
-					padding-right: 0;
-				}
-
-				ul.icons li .icon:before {
-					font-size: 2rem;
-				}
-
 		ul.actions {
 			cursor: default;
 			list-style: none;
@@ -2551,10 +2486,6 @@
 							width: 100%;
 							margin: 0 !important;
 						}
-
-							ul.actions li > *.icon:before {
-								margin-left: -2rem;
-							}
 
 					ul.actions.small li {
 						padding: 0.5rem 0 0 0;
@@ -2805,14 +2736,6 @@
 						background-color: rgba(255, 255, 255, 0.2);
 					}
 
-					.wrapper.style1 input[type="submit"].alt.icon:before,
-					.wrapper.style1 input[type="reset"].alt.icon:before,
-					.wrapper.style1 input[type="button"].alt.icon:before,
-					.wrapper.style1 button.alt.icon:before,
-					.wrapper.style1 .button.alt.icon:before {
-						color: #d0b5cc;
-					}
-
 				.wrapper.style1 input[type="submit"].special,
 				.wrapper.style1 input[type="reset"].special,
 				.wrapper.style1 input[type="button"].special,
@@ -2962,123 +2885,119 @@
 				border-color: rgba(0, 0, 0, 0.15);
 			}
 
-			.wrapper.style2 input[type="submit"],
-			.wrapper.style2 input[type="reset"],
-			.wrapper.style2 input[type="button"],
-			.wrapper.style2 button,
-			.wrapper.style2 .button {
-				background-color: #293030;
-				color: #f2f2f2 !important;
-			}
+			/* General button and input styling */
+.wrapper.style2 input[type="submit"],
+.wrapper.style2 input[type="reset"],
+.wrapper.style2 input[type="button"],
+.wrapper.style2 button,
+.wrapper.style2 .button {
+    background-color: #293030;
+    color: #f2f2f2 !important;
+}
 
-				.wrapper.style2 input[type="submit"].alt,
-				.wrapper.style2 input[type="reset"].alt,
-				.wrapper.style2 input[type="button"].alt,
-				.wrapper.style2 button.alt,
-				.wrapper.style2 .button.alt {
-					background-color: transparent;
-					box-shadow: inset 0 0 0 2px rgba(0, 0, 0, 0.15);
-					color: #000 !important;
-				}
+/* Alt button styling */
+.wrapper.style2 input[type="submit"].alt,
+.wrapper.style2 input[type="reset"].alt,
+.wrapper.style2 input[type="button"].alt,
+.wrapper.style2 button.alt,
+.wrapper.style2 .button.alt {
+    background-color: transparent;
+    box-shadow: inset 0 0 0 2px rgba(0, 0, 0, 0.15);
+    color: #000 !important;
+}
 
-					.wrapper.style2 input[type="submit"].alt:hover,
-					.wrapper.style2 input[type="reset"].alt:hover,
-					.wrapper.style2 input[type="button"].alt:hover,
-					.wrapper.style2 button.alt:hover,
-					.wrapper.style2 .button.alt:hover {
-						background-color: rgba(0, 0, 0, 0.075);
-					}
+.wrapper.style2 input[type="submit"].alt:hover,
+.wrapper.style2 input[type="reset"].alt:hover,
+.wrapper.style2 input[type="button"].alt:hover,
+.wrapper.style2 button.alt:hover,
+.wrapper.style2 .button.alt:hover {
+    background-color: rgba(0, 0, 0, 0.075);
+}
 
-					.wrapper.style2 input[type="submit"].alt:active,
-					.wrapper.style2 input[type="reset"].alt:active,
-					.wrapper.style2 input[type="button"].alt:active,
-					.wrapper.style2 button.alt:active,
-					.wrapper.style2 .button.alt:active {
-						background-color: rgba(0, 0, 0, 0.2);
-					}
+.wrapper.style2 input[type="submit"].alt:active,
+.wrapper.style2 input[type="reset"].alt:active,
+.wrapper.style2 input[type="button"].alt:active,
+.wrapper.style2 button.alt:active,
+.wrapper.style2 .button.alt:active {
+    background-color: rgba(0, 0, 0, 0.2);
+}
 
-					.wrapper.style2 input[type="submit"].alt.icon:before,
-					.wrapper.style2 input[type="reset"].alt.icon:before,
-					.wrapper.style2 input[type="button"].alt.icon:before,
-					.wrapper.style2 button.alt.icon:before,
-					.wrapper.style2 .button.alt.icon:before {
-						color: #999999;
-					}
+/* Special button styling */
+.wrapper.style2 input[type="submit"].special,
+.wrapper.style2 input[type="reset"].special,
+.wrapper.style2 input[type="button"].special,
+.wrapper.style2 button.special,
+.wrapper.style2 .button.special {
+    background-color: #8a4680;
+    color: #ffffff !important;
+}
 
-				.wrapper.style2 input[type="submit"].special,
-				.wrapper.style2 input[type="reset"].special,
-				.wrapper.style2 input[type="button"].special,
-				.wrapper.style2 button.special,
-				.wrapper.style2 .button.special {
-					background-color: #8a4680;
-					color: #ffffff !important;
-				}
+.wrapper.style2 input[type="submit"].special:hover,
+.wrapper.style2 input[type="reset"].special:hover,
+.wrapper.style2 input[type="button"].special:hover,
+.wrapper.style2 button.special:hover,
+.wrapper.style2 .button.special:hover {
+    background-color: #9b4f90;
+}
 
-					.wrapper.style2 input[type="submit"].special:hover,
-					.wrapper.style2 input[type="reset"].special:hover,
-					.wrapper.style2 input[type="button"].special:hover,
-					.wrapper.style2 button.special:hover,
-					.wrapper.style2 .button.special:hover {
-						background-color: #9b4f90;
-					}
+.wrapper.style2 input[type="submit"].special:active,
+.wrapper.style2 input[type="reset"].special:active,
+.wrapper.style2 input[type="button"].special:active,
+.wrapper.style2 button.special:active,
+.wrapper.style2 .button.special:active {
+    background-color: #793d70;
+}
 
-					.wrapper.style2 input[type="submit"].special:active,
-					.wrapper.style2 input[type="reset"].special:active,
-					.wrapper.style2 input[type="button"].special:active,
-					.wrapper.style2 button.special:active,
-					.wrapper.style2 .button.special:active {
-						background-color: #793d70;
-					}
+/* Form and label styling */
+.wrapper.style2 label {
+    color: #000;
+}
 
-			.wrapper.style2 label {
-				color: #000;
-			}
+.wrapper.style2 input[type="text"],
+.wrapper.style2 input[type="password"],
+.wrapper.style2 input[type="email"],
+.wrapper.style2 select,
+.wrapper.style2 textarea {
+    background: rgba(0, 0, 0, 0.075);
+    border-color: rgba(0, 0, 0, 0.15);
+}
 
-			.wrapper.style2 input[type="text"],
-			.wrapper.style2 input[type="password"],
-			.wrapper.style2 input[type="email"],
-			.wrapper.style2 select,
-			.wrapper.style2 textarea {
-				background: rgba(0, 0, 0, 0.075);
-				border-color: rgba(0, 0, 0, 0.15);
-			}
+.wrapper.style2 input[type="text"]:focus,
+.wrapper.style2 input[type="password"]:focus,
+.wrapper.style2 input[type="email"]:focus,
+.wrapper.style2 select:focus,
+.wrapper.style2 textarea:focus {
+    border-color: #8a4680;
+    box-shadow: 0 0 0 1px #8a4680;
+}
 
-				.wrapper.style2 input[type="text"]:focus,
-				.wrapper.style2 input[type="password"]:focus,
-				.wrapper.style2 input[type="email"]:focus,
-				.wrapper.style2 select:focus,
-				.wrapper.style2 textarea:focus {
-					border-color: #8a4680;
-					box-shadow: 0 0 0 1px #8a4680;
-				}
+.wrapper.style2 .select-wrapper:before {
+    color: rgba(0, 0, 0, 0.15);
+}
 
-			.wrapper.style2 .select-wrapper:before {
-				color: rgba(0, 0, 0, 0.15);
-			}
+.wrapper.style2 input[type="checkbox"] + label,
+.wrapper.style2 input[type="radio"] + label {
+    color: #a6a6a6;
+}
 
-			.wrapper.style2 input[type="checkbox"] + label,
-			.wrapper.style2 input[type="radio"] + label {
-				color: #a6a6a6;
-			}
+.wrapper.style2 input[type="checkbox"] + label:before,
+.wrapper.style2 input[type="radio"] + label:before {
+    background: rgba(0, 0, 0, 0.075);
+    border-color: rgba(0, 0, 0, 0.15);
+}
 
-				.wrapper.style2 input[type="checkbox"] + label:before,
-				.wrapper.style2 input[type="radio"] + label:before {
-					background: rgba(0, 0, 0, 0.075);
-					border-color: rgba(0, 0, 0, 0.15);
-				}
+.wrapper.style2 input[type="checkbox"]:checked + label:before,
+.wrapper.style2 input[type="radio"]:checked + label:before {
+    background-color: #8a4680;
+    border-color: #8a4680;
+    color: #ffffff;
+}
 
-			.wrapper.style2 input[type="checkbox"]:checked + label:before,
-			.wrapper.style2 input[type="radio"]:checked + label:before {
-				background-color: #8a4680;
-				border-color: #8a4680;
-				color: #ffffff;
-			}
-
-			.wrapper.style2 input[type="checkbox"]:focus + label:before,
-			.wrapper.style2 input[type="radio"]:focus + label:before {
-				border-color: #8a4680;
-				box-shadow: 0 0 0 1px #8a4680;
-			}
+.wrapper.style2 input[type="checkbox"]:focus + label:before,
+.wrapper.style2 input[type="radio"]:focus + label:before {
+    border-color: #8a4680;
+    box-shadow: 0 0 0 1px #8a4680;
+}
 
 			.wrapper.style2 ::-webkit-input-placeholder {
 				color: #999999 !important;
@@ -3224,14 +3143,6 @@
 					.wrapper.style3 button.alt:active,
 					.wrapper.style3 .button.alt:active {
 						background-color: rgba(255, 255, 255, 0.2);
-					}
-
-					.wrapper.style3 input[type="submit"].alt.icon:before,
-					.wrapper.style3 input[type="reset"].alt.icon:before,
-					.wrapper.style3 input[type="button"].alt.icon:before,
-					.wrapper.style3 button.alt.icon:before,
-					.wrapper.style3 .button.alt.icon:before {
-						color: #999999;
 					}
 
 				.wrapper.style3 input[type="submit"].special,
@@ -4233,29 +4144,24 @@
   
   /* Center: vertical stack */
   .footer-center {
-	flex-direction: column;
-	text-align: center;
-	gap: 0.5rem;
-  }
-  
-  /* Social icons row */
-  .social-icons {
 	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: flex-end; /* This will push the content to the bottom */
+	height: 100%; /* Ensures the container takes up full height */
 	gap: 1rem;
-	list-style: none;
-	padding: 0;
-	margin: 0;
   }
   
-  .social-icons a {
-	color: rgba(255, 255, 255, 0.6);
-	font-size: 1.5rem;
-	text-decoration: none;
-	transition: color 0.3s;
+  .copyright p {
+	color: #b1c68a;
+	margin: 0; /* Remove any default margins */
   }
   
-  .social-icons a:hover {
-	color: white;
+  .copyright {
+	margin-top: auto; /* Pushes the <p> element to the bottom */
+  }
+  .copyright p {
+	color: #b1c68a;
   }
   
   /* Copyright */
@@ -4283,13 +4189,27 @@
 	}
   
 	.footer-left,
-	.footer-center,
 	.footer-right {
 	  flex-direction: column;
 	  align-items: center;
 	  gap: 1rem;
 	}
-  
+	.footer-center {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		gap: 1rem;
+		height: 100%; /* Ensures the container takes full height */
+	  }
+	  
+	  .copyright {
+		margin-top: auto; /* Pushes the <p> element to the bottom */
+	  }
+	  
+	  .copyright p {
+		color: #b1c68a;
+	  }
+	  
 	.footer-left img,
 	.footer-right img {
 	  max-width: 100px;
@@ -4300,9 +4220,34 @@
 	  flex-wrap: wrap;
 	  justify-content: center;
 	}
+  }
+
+  .contact_info {
+	display: flex;
+	flex-direction: row; /* Default to row on larger screens */
+	justify-content: space-around;
+	align-items: center;
+  }
   
-	.social-icons {
-	  justify-content: center;
+  .contact_info .founder1, .contact_info .founder2 {
+	display: flex;
+	flex-direction: column; /* Stack content vertically */
+	align-items: center;
+	text-align: center;
+	max-width: 300px; /* Optional, limits the width */
+  }
+  
+  @media screen and (max-width: 768px) {
+	.contact_info {
+	  flex-direction: column; /* Stack the founders vertically */
+	}
+  
+	.contact_info .founder1, .contact_info .founder2 {
+	  margin-bottom: 2rem; /* Adds space between the two founders */
 	}
   }
   
+  
+  .hidden-text {
+	display: none;
+  }
