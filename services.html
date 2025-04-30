@@ -8,7 +8,24 @@
 			<link rel="stylesheet" href="assets/css/main.css">
 			<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 		</head>
-
+		<script>
+			document.addEventListener("DOMContentLoaded", function () {
+			  const titles = document.querySelectorAll(".toggle-title");
+		  
+			  titles.forEach(title => {
+				title.style.cursor = "pointer";
+				title.addEventListener("click", function () {
+				  const text = this.closest(".content").querySelector(".hidden-text");
+				  if (text.style.display === "block") {
+					text.style.display = "none";
+				  } else {
+					text.style.display = "block";
+				  }
+				});
+			  });
+			});
+		  </script>
+		  
 	<body>
 
 	<!--Header-->
@@ -27,7 +44,7 @@
 
 	
 		<!-- One -->
-		 
+
 		<section id="One" class="wrapper style3">
 			<div class="inner">
 				<header class="align-center">
@@ -36,23 +53,33 @@
 				</header>
 			</div>
 			</section>
-		
-			<section id="services_image">
-				<div>
-					<img src="images/FloorPlan2.jpg" style="width: 100%;">
+		<!--Two-->
+			<section id="Two" class="wrapper style2">
+				<div class="box">
+					<div class="content">
+						<header class="align-center">
+							<p>Understanding the Purpose and Need</p>
+								
+							<h2>Welcome to Leaf Studio</h2>
+						</header>
+						<p style="font-size: 24px;">We are committed to providing EPC and retrofit assessments, as well as floor plans and property photography. We offer accurate, reliable certificates and dedicated customer service. As accredited assessors, fully insured and CRB-checked we ensure full compliance with all relevant regulations.
+							By working with us, you’ll take the crucial first step toward a more efficient, sustainable, and healthier living space. </p>
+					</div>
 				</div>
 			</section>
 
-			<section id="one" class="wrapper style2"><div class="inner">
-				<div class="grid-style">
-	
-					<div>
-						<div class="box">
-							<div class="content">
+			<section id="one" class="wrapper style2">
+				<div class="inner">
+					<div class="grid-style">
+
+						<div>
+							<div class="box">
+								<div class="content">
 								<header class="align-center">
-									<h2>Energy Performance Certificates</h2>
+									<h2 class="toggle-title">Energy Performance Certificates</h2>
 								</header>
-								<p>An Energy Performance Certificate (EPC) rates a building's energy efficiency and provides recommendations for improvement. 
+								<div class="hidden-text">
+									<p>An Energy Performance Certificate (EPC) rates a building's energy efficiency and provides recommendations for improvement. 
 									It's a legal requirement when selling or renting a property. 
 									EPCs give buyers and tenants a clear understanding of a building’s energy performance, help estimate potential running costs, and allow easy comparison between properties. 
 									They also highlight opportunities to reduce energy bills, lower carbon emissions, and minimize your property’s environmental impact. 
@@ -61,50 +88,57 @@
 									<a href="https://assets.publishing.service.gov.uk/media/5a821a74ed915d74e3401be1/A_guide_to_energy_performance_certificates_for_the_marketing__sale_and_let_of_dwellings.pdf">here</a>
 									</p>
 								</div>
+								</div>
+							</div>						  
 						</div>
-					</div>
-					<div>
-						<div class="box">
-							<div class="content">
+						<div>
+							<div class="box">
+								<div class="content">
 								<header class="align-center">
-									<h2>Retrofit Assessments</h2>
+									<h2 class="toggle-title">Retrofit Assessments</h2>
 								</header>
-								<p>A Retrofit Assessment is the first step toward making your home more energy-efficient, comfortable, and cost-effective. It provides a detailed understanding of your property’s current condition and energy use, highlighting tailored improvements from insulation and heating upgrades to ventilation and renewable options. 
-									Whether you’re a homeowner, landlord or applying for energy-efficiency grants, it ensures your upgrades are safe, cost-effective, and fully compliant with PAS 2035 standards. 
-									By investing in a Retrofit Assessment, you are starting the journey to not only enhance your property’s efficiency and value but also contribute to a greener future.</p>
+								<div class="hidden-text">
+									<p>A Retrofit Assessment is the first step toward making your home more energy-efficient, comfortable, and cost-effective. It provides a detailed understanding of your property’s current condition and energy use, highlighting tailored improvements from insulation and heating upgrades to ventilation and renewable options. 
+										Whether you’re a homeowner, landlord or applying for energy-efficiency grants, it ensures your upgrades are safe, cost-effective, and fully compliant with PAS 2035 standards. 
+										By investing in a Retrofit Assessment, you are starting the 
+										journey to not only enhance your property’s 
+										efficiency and value but also contribute to a greener future.</p>
+								</div>
+								</div>
 							</div>
 						</div>
-					</div>
-	
-					<div>
-						<div class="box">
-							<div class="content">
+						<div>
+							<div class="box">
+								<div class="content">
 								<header class="align-center">
-									<h2>Floor Plans</h2>
+									<h2 class="toggle-title">Floor Plans</h2>
 								</header>
+								<div class="hidden-text">
 									<p>
 										We provide accurate, detailed floor plans that offer a clear layout of your property, helping buyers, tenants, and potential investors visualize the space. 
 										Floor plans are essential for marketing, showcasing the size and flow of rooms, and aiding in property comparisons. 
 									</p>
+								</div>
+								</div>
 							</div>
 						</div>
-					</div>
-					<div>
-						<div class="box">
-							<div class="content">
+						<div>
+							<div class="box">
+								<div class="content">
 								<header class="align-center">
-									<h2>Property Photography</h2>
+									<h2 class="toggle-title">Property Photography</h2>
 								</header>
+								<div class="hidden-text">
 									<p>And last but not least, we specialize in high-quality property and architectural photography, capturing spaces in the best light. Our professional photos highlight the true potential of the built environment, attracting buyers, tenants, or investors by showcasing key features and leaving a lasting impression. 
 										Whether for real estate listings, marketing materials, design portfolios, or building documentation, our photography ensures your property is presented visually striking while preserving its unique details. 
 										After completing your retrofit or improvements, why not document the transformation with pleasing photography? 
 										Visit our portfolio here to see how we can highlight your property.<br></p>
+								</div>
+								</div>
 							</div>
 						</div>
 					</div>
-	
 				</div>
-			</div>
 			</section>
 		
 			<!-- Footer -->		
@@ -114,16 +148,10 @@
 				  <img src="images/KPSlogo.png" alt="KaPeStudio Logo" style="max-height: 110px;">
 				</div>
 			  
-				<!-- Center: Icons + Copyright stacked vertically -->
+				<!-- Center: Copyright stacked vertically -->
 				<div class="footer-center">
-				  <ul class="social-icons">
-					<li><a href="#" class="icon fa-twitter" style="color: #b1c68a;"><span class="label">Twitter</span></a></li>
-					<li><a href="#" class="icon fa-facebook" style="color: #659357;"><span class="label">Facebook</span></a></li>
-					<li><a href="#" class="icon fa-instagram" style="color: #d6c8c7;"><span class="label">Instagram</span></a></li>
-					<li><a href="#" class="icon fa-envelope-o" style="color: #4b7070;"><span class="label">Email</span></a></li>
-				  </ul>
 				  <div class="copyright">
-					<p>Created by KaPeStudio</p>
+					<p style="color: #b1c68a;">Created by KaPeStudio</p>
 				  </div>
 				</div>
 			  
