@@ -4235,4 +4235,7 @@
   
   .hidden-text {
 	display: none;
+	color:#000;
+	background-color: white;
+	padding: 25px;
   }
