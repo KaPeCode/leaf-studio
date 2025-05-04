@@ -4119,11 +4119,11 @@
 	align-items: center;
 	background-color: #293030; /* Dark background */
 	color: white;
-	padding: 2rem 3rem;
+	padding:  2rem 3rem;
 	gap: 2rem;
 	flex-wrap: nowrap; /* Stay in one row */
 	position: relative; /* Position footer relative to itself */
-	height: 200px; /* Give the footer some height */
+	height: 135px; /* Give the footer some height */
   }
   
   .footer-left,
