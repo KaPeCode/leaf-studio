@@ -3723,7 +3723,18 @@
     	width: 100%;
     	flex: 1 1 100%;
   		}
-	  }
+		header {
+			height: 4.5em;            /* Adjust height for mobile screens */
+			line-height: 4em;       /* Vertically center content */
+			padding: 0 1.5em;         /* Adjust padding for smaller screens */
+			  }
+		.logo a {
+			flex-direction: column;
+			flex-wrap: wrap;
+			font-size: small;
+		}
+		}
+
   
   
 /* Menu */
