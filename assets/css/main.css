@@ -2063,7 +2063,21 @@
 			.button.special:active {
 				background-color: #793d70;
 			}
-
+			@media screen and (max-width: 980px) {
+				.email_contact {
+				  display: flex;
+				  flex-direction: column;
+				  flex-wrap: wrap;
+				  word-break: break-word; /* This helps with long words/emails */
+				  text-align: center;      /* Optional: better centering for mobile */
+				}
+				.email_contact h2 {
+					font-size: 1rem;         /* Optional: reduce font size on small screens */
+				  }
+				.phone_contact h2 {
+					font-size: 1rem;
+				}
+			}
 /* Form */
 
 	form {
@@ -3669,7 +3683,7 @@
 	  }
 	  
 	  .logo {
-		flex: 0 0 40%;
+		flex: 0 0 30%;
 	  }
 	  
 	  .logo a {
@@ -3682,10 +3696,10 @@
 		color: rgba(255, 255, 255, 0.65);
 	  }
 	  
-	  .main-nav {
-		flex: 0 0 60%;
+	  main-nav {
+		flex: 0 0 70%;
 		display: flex;
-		justify-content: space-evenly;
+		justify-content: space-between;
 	  }
 	  
 	  .main-nav a {
@@ -3698,11 +3712,23 @@
 	  .main-nav a:hover {
 		color: #f2f2f2;
 	  }
-	  
 
+	  @media screen and (max-width: 768px) {
+
+  		.main-nav {
+    	flex-direction: column;      /* Stack links vertically */
+		overflow-x: auto;
+		padding-top: 30px;
+    	align-items: center;
+    	width: 100%;
+    	flex: 1 1 100%;
+  		}
+	  }
+  
+  
 /* Menu */
 
-	#menu {
+	/* #menu {
 		-moz-transform: translateX(20rem);
 		-webkit-transform: translateX(20rem);
 		-ms-transform: translateX(20rem);
@@ -3725,7 +3751,7 @@
 		visibility: hidden;
 		width: 20rem;
 		z-index: 10002;
-	}
+	} */
 
 		#menu > ul {
 			margin: 0 0 1rem 0;
