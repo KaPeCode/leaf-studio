@@ -4024,9 +4024,12 @@
 	.main-image img {
 	  max-width: 100%;
 	}
-  
 	.thumbnails img {
 	  width: 90px;
+	}
+	#gallery_h2 {
+		padding-top: 30px;
+
 	}
   }
   
