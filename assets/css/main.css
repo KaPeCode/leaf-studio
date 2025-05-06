@@ -3845,6 +3845,24 @@
 			}
 
 		}
+/* Service page */
+	#service_p {
+		@media (max-width: 768px) {
+			padding-top: 55px;
+		}
+	}
+/* About page */
+	#about_p {
+		@media (max-width: 768px) {
+			padding-top: 55px;
+		}
+	}
+/* Contact page*/
+	#contact_p {
+		@media (max-width: 768px) {
+			padding-top: 30px;
+		}
+	}
 /* === Footer base === */
 #footer {
 	display: flex;
